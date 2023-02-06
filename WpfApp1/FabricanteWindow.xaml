@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.FabricanteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="FabricanteWindow" Height="270" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Id" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="272,10,0,0" Text="Sigla" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,10,0,0" Text="Fabricante" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="10,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <TextBox Name="txtSigla" HorizontalAlignment="Left" Margin="272,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="41"/>
+        <TextBox Name="txtFabricante" HorizontalAlignment="Left" Margin="114,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtFabricante_TextChanged"/>
+        <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="89,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listFabricantes" Margin="10,80,15,15" SelectionChanged="listTurmas_SelectionChanged" />
+    </Grid>
+</Window>

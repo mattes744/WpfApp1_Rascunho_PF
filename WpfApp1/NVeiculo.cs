@@ -69,6 +69,20 @@ namespace WpfApp1
             xml.Serialize(f, veiculos);
             f.Close();
         }
+        public static void Cadastrar(Veiculo a, Fabricante t)
+        {
+            a.IdFabricante = t.Id;
+            Atualizar(a);
+        }
+        public static List<Veiculo> Listar(Fabricante t)
+        {
+            Abrir();
+            // Percorrer a lista de alunos procurando o id da turma informada
+            List<Veiculo> diario = new List<Veiculo>();
+            foreach (Veiculo obj in veiculos)
+                if (obj.IdFabricante == t.Id) diario.Add(obj);
+            return diario;
+        }
     }
 }
 
