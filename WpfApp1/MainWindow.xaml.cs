@@ -24,5 +24,29 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Veiculo_Click(object sender, RoutedEventArgs e)
+        {
+            VeiculoWindow w = new VeiculoWindow();
+            w.ShowDialog();
+        }
+
+        private void Modelo_Click(object sender, RoutedEventArgs e)
+        {
+            ModeloWindow w = new ModeloWindow();
+            w.ShowDialog();
+        }
+
+        private void CadastroVeiculo_Click(object sender, RoutedEventArgs e)
+        {
+            Cadastro_Modelo_No_VeículoWindow w = new Cadastro_Modelo_No_VeículoWindow();
+            w.ShowDialog();
+        }
+
+        private void Registrados_Click(object sender, RoutedEventArgs e)
+        {
+            RegistradosWindow w = new RegistradosWindow();
+            w.ShowDialog();
+        }
     }
 }
